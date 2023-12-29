@@ -1,8 +1,0 @@
-@ECHO ON
-rundll32.exe pnpclean.dll,RunDLL_PnpClean /drivers/maxclean
-dism /Online /Cleanup-Image /CheckHealth
-dism /Online /Cleanup-Image /ScanHealth
-sfc /scannow
-dism /Online /Cleanup-Image /RestoreHealth
-PAUSE
-EXIT
